@@ -39,7 +39,7 @@ $ICON_SOURCE_PATH/Sources/remove-unused-fluent-icons/run \
 
 #### 3. Consistent asset rendering
 
-All non-color icons are rendered as template images so you can easily apply a `tintColor` to your `UIImageView` or `UIButton`.  You no longer need to specify `.withRenderingMode(.alwaysTemplate)` in case you're unsure the asset was misconfigured.
+All non-color icons are rendered as template images so you can easily apply a `.foregroundColor(_ color:)` to your `Image`.
 
 ## FAQ
 
