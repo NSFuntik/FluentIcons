@@ -26,7 +26,7 @@ final class RemoveUnusedFluentIconTests: XCTestCase {
 
   func testSearchForSwift() throws {
     let testProject = fluentIconSource
-      
+      .appendingPathComponent("Sources")
       .appendingPathComponent("remove-unused-fluent-icons")
       .appendingPathComponent("TestProject")
     let result = searchForCodeReferences(in: testProject.path, language: .swift, weights: ["regular", "filled"], excludingFileName: "FluentIcon")
@@ -36,7 +36,7 @@ final class RemoveUnusedFluentIconTests: XCTestCase {
 
   func testSearchForObjc() throws {
     let testProject = fluentIconSource
-      
+      .appendingPathComponent("Sources")
       .appendingPathComponent("remove-unused-fluent-icons")
       .appendingPathComponent("TestProject")
     let result = searchForCodeReferences(in: testProject.path, language: .objc, weights: ["regular", "filled"], excludingFileName: "FluentIcon")
@@ -46,7 +46,7 @@ final class RemoveUnusedFluentIconTests: XCTestCase {
 
   func testGetIconNameFromAssetCatalog() throws {
     let imageset = fluentIconSource
-      
+      .appendingPathComponent("Sources")
       .appendingPathComponent("FluentIcons")
       .appendingPathComponent("Assets")
       .appendingPathComponent("IconAssets.xcassets")

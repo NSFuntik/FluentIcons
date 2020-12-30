@@ -5,7 +5,7 @@
 import Foundation
 
 func getAllIconNames(pathToFluentIconSource: String, libraryName: String, fileName: String) throws -> (names: Set<String>, weights: Set<String>) {
-  let url = URL(fileURLWithPath: "\(pathToFluentIconSource)/\(libraryName)/Classes/\(fileName).swift")
+  let url = URL(fileURLWithPath: "\(pathToFluentIconSource)/Sources/\(libraryName)/Classes/\(fileName).swift")
 
   let fileContents = try String(contentsOf: url, encoding: .utf8)
 
