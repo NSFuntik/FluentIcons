@@ -23,8 +23,6 @@ Image(fluent: .arrowHookDownLeft28Regular).foregroundColor(.red)
 
 By using the enum `FluentIcon.myIcon24Regular` you can be sure that the icon exists in your app at compile time.
 
-No more risky stringly typed `UIImage(named: "")!`
-
 #### 2. Only includes what you use
 
 At build/release time you can run the following script to ensure all unused assets are stripped from the app:
