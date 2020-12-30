@@ -83,7 +83,7 @@ public func removeUnusedAssets(libraryName: String, assetCatalogName: String, pa
     }
   }
 
-  let pathToFluentIconAssets = "\(pathToFluentIconSource)/ios/\(libraryName)/Assets/\(assetCatalogName).xcassets"
+  let pathToFluentIconAssets = "\(pathToFluentIconSource)/\(libraryName)/Assets/\(assetCatalogName).xcassets"
 
   let directories = try FileManager.default.contentsOfDirectory(
     at: URL(fileURLWithPath: pathToFluentIconAssets, isDirectory: true),
