@@ -1,10 +1,10 @@
 # Microsoft Fluent Design Icons for iOS & macOS
 
-A copy of the official [FluentIcons](https://github.com/microsoft/fluentui-system-icons) that works with Swift Package Manager and optimized for SwiftUI.
+A copy of [FluentIcons](https://github.com/microsoft/fluentui-system-icons) that works with Swift Package Manager and optimized for SwiftUI.
 
 ## Installation
 
-select File > Swift Packages > Add Package Dependency and enter its repository URL
+select File > Swift Packages > Add Package Dependency and enter this repository URL
 
 ## Usage
 
@@ -31,11 +31,12 @@ At build/release time you can run the following script to ensure all unused asse
 
 ```
 DERIVED_DATA=$(xcodebuild -showBuildSettings | pcregrep -o1 'OBJROOT = (/.*)/Build')
-ICON_SOURCE_PATH="${DERIVED_DATA}/SourcePackages/checkouts/FluentIcons"
+ICON_SOURCE_PATH="${DERIVED_DATA}/SourcePackages/checkouts/FluentIcons-SPM"
 
 $ICON_SOURCE_PATH/Sources/remove-unused-fluent-icons/run \
     --path-to-source-code "." \
     --path-to-fluent-icon-source $ICON_SOURCE_PATH
+
 ```
 
 #### 3. Consistent asset rendering
