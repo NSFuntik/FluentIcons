@@ -1,8 +1,9 @@
 {
   "images": [
     {
-      "filename": "ic_fluent_arrow_hook_up_left_16_regular.pdf",
-      "idiom": "universal"
+      "filename": "ic_fluent_arrow_hook_up_left_16_regular.svg",
+      "idiom": "universal",
+      "language-direction": "left-to-right"
     }
   ],
   "info": {
@@ -10,7 +11,6 @@
     "version": 1
   },
   "properties": {
-    "preserves-vector-representation": true,
     "template-rendering-intent": "template"
   }
 }

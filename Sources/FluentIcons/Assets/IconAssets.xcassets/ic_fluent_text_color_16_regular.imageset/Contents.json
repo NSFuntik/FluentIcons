@@ -1,8 +1,13 @@
 {
   "images": [
     {
-      "filename": "ic_fluent_text_color_16_regular.pdf",
+      "filename": "ic_fluent_text_color_16_regular.svg",
       "idiom": "universal"
+    },
+    {
+      "filename": "en_ic_fluent_text_color_16_regular.svg",
+      "idiom": "universal",
+      "locale": "en"
     }
   ],
   "info": {
@@ -10,7 +15,7 @@
     "version": 1
   },
   "properties": {
-    "preserves-vector-representation": true,
+    "localizable": true,
     "template-rendering-intent": "template"
   }
 }
