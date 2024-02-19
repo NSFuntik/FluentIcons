@@ -8,7 +8,7 @@
 import SwiftUI
 
 public extension Image {
-    init(fluent: FluentIcon) {
+    init(_ fluent: FluentIcon) {
         self.init(fluent.resourceString, bundle: .module)
     }
 }
